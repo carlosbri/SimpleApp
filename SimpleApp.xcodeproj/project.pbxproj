@@ -17,7 +17,6 @@
 		9DA2AA9B1743642E00645644 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AA9A1743642E00645644 /* Default@2x.png */; };
 		9DA2AA9D1743642E00645644 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AA9C1743642E00645644 /* Default-568h@2x.png */; };
 		9DA2AAA01743642E00645644 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AA9E1743642E00645644 /* MainStoryboard_iPhone.storyboard */; };
-		9DA2AAA31743642E00645644 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2AAA11743642E00645644 /* MainStoryboard_iPad.storyboard */; };
 		9DA2AAA61743642E00645644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2AAA51743642E00645644 /* ViewController.m */; };
 		9DA2AAAE1743642E00645644 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA2AAAD1743642E00645644 /* SenTestingKit.framework */; };
 		9DA2AAAF1743642E00645644 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA2AA861743642E00645644 /* UIKit.framework */; };
@@ -51,7 +50,6 @@
 		9DA2AA9A1743642E00645644 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9DA2AA9C1743642E00645644 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9DA2AA9F1743642E00645644 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		9DA2AAA21743642E00645644 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9DA2AAA41743642E00645644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9DA2AAA51743642E00645644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9DA2AAAC1743642E00645644 /* SimpleAppTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +120,6 @@
 				9DA2AA951743642E00645644 /* AppDelegate.h */,
 				9DA2AA961743642E00645644 /* AppDelegate.m */,
 				9DA2AA9E1743642E00645644 /* MainStoryboard_iPhone.storyboard */,
-				9DA2AAA11743642E00645644 /* MainStoryboard_iPad.storyboard */,
 				9DA2AAA41743642E00645644 /* ViewController.h */,
 				9DA2AAA51743642E00645644 /* ViewController.m */,
 				9DA2AA8D1743642E00645644 /* Supporting Files */,
@@ -239,7 +236,6 @@
 				9DA2AA9B1743642E00645644 /* Default@2x.png in Resources */,
 				9DA2AA9D1743642E00645644 /* Default-568h@2x.png in Resources */,
 				9DA2AAA01743642E00645644 /* MainStoryboard_iPhone.storyboard in Resources */,
-				9DA2AAA31743642E00645644 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +311,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		9DA2AAA11743642E00645644 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9DA2AAA21743642E00645644 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		9DA2AAB61743642E00645644 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,7 +375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,6 +387,7 @@
 				GCC_PREFIX_HEADER = "SimpleApp/SimpleApp-Prefix.pch";
 				INFOPLIST_FILE = "SimpleApp/SimpleApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,6 +399,7 @@
 				GCC_PREFIX_HEADER = "SimpleApp/SimpleApp-Prefix.pch";
 				INFOPLIST_FILE = "SimpleApp/SimpleApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
