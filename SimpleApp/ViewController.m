@@ -28,7 +28,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeGreeting:(id)sender {
+- (IBAction)changeGreeting:(id)sender
+{
     
     self.userName = self.textField.text;
     
