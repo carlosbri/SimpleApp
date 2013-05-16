@@ -35,7 +35,7 @@
     
     NSString *nameString = self.userName;
     
-    if ([nameString length] == 0)
+    if([nameString length] == 0)
     {
         nameString = @"World";
     }
@@ -46,6 +46,7 @@
     [self.textField resignFirstResponder];
     
 }
+
 
 - (BOOL) textFieldShouldReturn:(UITextField *)theTextField
 {
