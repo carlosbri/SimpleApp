@@ -30,7 +30,6 @@
 
 - (IBAction)changeGreeting:(id)sender
 {
-    
     self.userName = self.textField.text;
     
     NSString *nameString = self.userName;
