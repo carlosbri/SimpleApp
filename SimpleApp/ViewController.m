@@ -14,7 +14,7 @@
 
 @implementation ViewController
 
-@synthesize userName = _userName;
+//@synthesize userName = _userName;
 
 - (void)viewDidLoad
 {
